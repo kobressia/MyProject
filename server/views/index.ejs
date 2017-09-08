@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Title</title> 
+<body>
+  <ul>
+    <% for (let index = 0; index < users.length; ++index) { %>
+    	<li><%= users[index].fullName %></li>
+    <% } %>
+  </ul>
+  <form action="/users" method="post" type="application">
+  	<input type="text" name="firstName" title="First Name"/>
+  	<input type="text" name="lastName" title="Last Name"/>
+  	<input type="submit" />
+  </form>
+</body>
+</html>	
